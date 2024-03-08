@@ -15,7 +15,7 @@ namespace Knowledge
     {
         private List<Point> objectPositions = new List<Point>();
 
-        private List<System.Drawing.Rectangle>  rectangles = new List<System.Drawing.Rectangle>();
+        private List<System.Drawing.Rectangle> rectangles = new List<System.Drawing.Rectangle>();
 
         public MainForm()
         {
@@ -36,7 +36,7 @@ namespace Knowledge
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
-            Graphics g = panel1.CreateGraphics();
+            Graphics g = MainPanel.CreateGraphics();
 
             // Vẽ các đối tượng
             foreach (Point point in objectPositions)
@@ -52,6 +52,27 @@ namespace Knowledge
                 {
                     g.DrawLine(pen, objectPositions[i], objectPositions[i + 1]);
                 }
+            }
+        }
+
+
+        private void btnAddCompound_Click(object sender, EventArgs e)
+        {
+            var addCompoundForm = new AddCompoundForm();
+            var dialogResult = addCompoundForm.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+                
+            }
+        }
+
+        private void btnAddRule_Click(object sender, EventArgs e)
+        {
+            var addRuleForm = new AddRuleForm();
+            var dialogResult = addRuleForm.ShowDialog();
+            if (dialogResult == DialogResult.OK)
+            {
+
             }
         }
     }

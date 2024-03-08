@@ -3,32 +3,80 @@
   "WorkspaceRootPath": "D:\\Knowledge\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\triangle\\formulas\\cosinaformula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\triangle\\formulas\\cosinaformula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\triangle\\formulas\\areafromedgeandheightbformula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\triangle\\formulas\\areafromedgeandheightbformula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\triangle\\formulas\\areafromedgeandheightaformula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\triangle\\formulas\\areafromedgeandheightaformula.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\triangle\\triangleelementtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\triangle\\triangleelementtype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|D:\\Knowledge\\knowledge\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|D:\\Knowledge\\knowledge\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\triangle\\trianglemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\triangle\\trianglemain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\addcompoundform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\addcompoundform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\addcompoundform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\addcompoundform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\addruleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\addruleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\entities\\chemicals\\chemical_compound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\entities\\chemicals\\chemical_compound.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\core\\chemical\\atom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\core\\chemical\\atom.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\addruleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\addruleform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\entities\\chemicals\\chemical_rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\entities\\chemicals\\chemical_rule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\properties\\resources.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\business\\chemical\\rulebasedsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\business\\chemical\\rulebasedsystem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\business\\jsonfilechemicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\business\\jsonfilechemicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\entities\\chemicals\\chemical_ruleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\entities\\chemicals\\chemical_ruleitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\core\\chemical\\ichemicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\core\\chemical\\ichemicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\entities\\chemicals\\chemical_compoundproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\entities\\chemicals\\chemical_compoundproperty.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\core\\idgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\core\\idgenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|d:\\knowledge\\knowledge\\business\\chemical\\chemicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8299B000-7E61-4EA5-8F91-0978151A3D5F}|Knowledge\\Knowledge.csproj|solutionrelative:knowledge\\business\\chemical\\chemicalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,71 +95,69 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CosinAFormula.cs",
-              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Triangle\\Formulas\\CosinAFormula.cs",
-              "RelativeDocumentMoniker": "Knowledge\\Triangle\\Formulas\\CosinAFormula.cs",
-              "ToolTip": "D:\\Knowledge\\Knowledge\\Triangle\\Formulas\\CosinAFormula.cs",
-              "RelativeToolTip": "Knowledge\\Triangle\\Formulas\\CosinAFormula.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA7AAAA",
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Program.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Program.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Program.cs",
+              "RelativeToolTip": "Knowledge\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T09:03:45.451Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AreaFromEdgeAndHeightBFormula.cs",
-              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightBFormula.cs",
-              "RelativeDocumentMoniker": "Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightBFormula.cs",
-              "ToolTip": "D:\\Knowledge\\Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightBFormula.cs",
-              "RelativeToolTip": "Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightBFormula.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T08:25:51.712Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AreaFromEdgeAndHeightAFormula.cs",
-              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightAFormula.cs",
-              "RelativeDocumentMoniker": "Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightAFormula.cs",
-              "ToolTip": "D:\\Knowledge\\Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightAFormula.cs",
-              "RelativeToolTip": "Knowledge\\Triangle\\Formulas\\AreaFromEdgeAndHeightAFormula.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T08:25:21.979Z",
+              "WhenOpened": "2024-03-08T10:16:25.346Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TriangleElementType.cs",
-              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Triangle\\TriangleElementType.cs",
-              "RelativeDocumentMoniker": "Knowledge\\Triangle\\TriangleElementType.cs",
-              "ToolTip": "D:\\Knowledge\\Knowledge\\Triangle\\TriangleElementType.cs",
-              "RelativeToolTip": "Knowledge\\Triangle\\TriangleElementType.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "AddCompoundForm.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\AddCompoundForm.cs",
+              "RelativeDocumentMoniker": "Knowledge\\AddCompoundForm.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\AddCompoundForm.cs",
+              "RelativeToolTip": "Knowledge\\AddCompoundForm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIAwwBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-29T08:20:54.211Z",
+              "WhenOpened": "2024-03-08T10:08:09.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Chemical_Compound.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_Compound.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Entities\\Chemicals\\Chemical_Compound.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_Compound.cs",
+              "RelativeToolTip": "Knowledge\\Entities\\Chemicals\\Chemical_Compound.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T10:07:19.198Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "MainForm.cs",
-              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\MainForm.cs",
-              "RelativeDocumentMoniker": "Knowledge\\MainForm.cs",
-              "ToolTip": "D:\\Knowledge\\Knowledge\\MainForm.cs",
-              "RelativeToolTip": "Knowledge\\MainForm.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAywC8AAAArAAAA",
+              "Title": "AddCompoundForm.cs [Design]",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\AddCompoundForm.cs",
+              "RelativeDocumentMoniker": "Knowledge\\AddCompoundForm.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\AddCompoundForm.cs [Design]",
+              "RelativeToolTip": "Knowledge\\AddCompoundForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T08:37:45.31Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-03-08T09:53:15.731Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "AddRuleForm.cs [Design]",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\AddRuleForm.cs",
+              "RelativeDocumentMoniker": "Knowledge\\AddRuleForm.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\AddRuleForm.cs [Design]",
+              "RelativeToolTip": "Knowledge\\AddRuleForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T09:53:11.363Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "MainForm.cs [Design]",
               "DocumentMoniker": "D:\\Knowledge\\Knowledge\\MainForm.cs",
               "RelativeDocumentMoniker": "Knowledge\\MainForm.cs",
@@ -123,15 +169,171 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TriangleMain.cs",
-              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Triangle\\TriangleMain.cs",
-              "RelativeDocumentMoniker": "Knowledge\\Triangle\\TriangleMain.cs",
-              "ToolTip": "D:\\Knowledge\\Knowledge\\Triangle\\TriangleMain.cs",
-              "RelativeToolTip": "Knowledge\\Triangle\\TriangleMain.cs",
+              "DocumentIndex": 1,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\MainForm.cs",
+              "RelativeDocumentMoniker": "Knowledge\\MainForm.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\MainForm.cs",
+              "RelativeToolTip": "Knowledge\\MainForm.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAASwEoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-28T08:37:45.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddRuleForm.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\AddRuleForm.cs",
+              "RelativeDocumentMoniker": "Knowledge\\AddRuleForm.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\AddRuleForm.cs",
+              "RelativeToolTip": "Knowledge\\AddRuleForm.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAIAwwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T10:05:17.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Chemical_Rule.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_Rule.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Entities\\Chemicals\\Chemical_Rule.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_Rule.cs",
+              "RelativeToolTip": "Knowledge\\Entities\\Chemicals\\Chemical_Rule.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwBAAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T04:58:11.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Resources.resx",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Properties\\Resources.resx",
+              "RelativeDocumentMoniker": "Knowledge\\Properties\\Resources.resx",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Properties\\Resources.resx",
+              "RelativeToolTip": "Knowledge\\Properties\\Resources.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-03-08T09:38:21.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Atom.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Core\\Chemical\\Atom.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Core\\Chemical\\Atom.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Core\\Chemical\\Atom.cs",
+              "RelativeToolTip": "Knowledge\\Core\\Chemical\\Atom.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T04:27:10.502Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "Knowledge\\MainForm.Designer.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\MainForm.Designer.cs",
+              "RelativeToolTip": "Knowledge\\MainForm.Designer.cs",
+              "ViewState": "AQIAAMEAAAAAAAAAAAAcwNMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T09:36:57.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RuleBasedSystem.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Business\\Chemical\\RuleBasedSystem.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Business\\Chemical\\RuleBasedSystem.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Business\\Chemical\\RuleBasedSystem.cs",
+              "RelativeToolTip": "Knowledge\\Business\\Chemical\\RuleBasedSystem.cs",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAlwJsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T06:16:24.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "JsonFileChemicalRepository.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Business\\JsonFileChemicalRepository.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Business\\JsonFileChemicalRepository.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Business\\JsonFileChemicalRepository.cs",
+              "RelativeToolTip": "Knowledge\\Business\\JsonFileChemicalRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:15:13.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Chemical_RuleItem.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_RuleItem.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Entities\\Chemicals\\Chemical_RuleItem.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_RuleItem.cs",
+              "RelativeToolTip": "Knowledge\\Entities\\Chemicals\\Chemical_RuleItem.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T06:09:32.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IChemicalRepository.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Core\\Chemical\\IChemicalRepository.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Core\\Chemical\\IChemicalRepository.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Core\\Chemical\\IChemicalRepository.cs",
+              "RelativeToolTip": "Knowledge\\Core\\Chemical\\IChemicalRepository.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA5wCMAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T08:53:17.261Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Chemical_CompoundProperty.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_CompoundProperty.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Entities\\Chemicals\\Chemical_CompoundProperty.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Entities\\Chemicals\\Chemical_CompoundProperty.cs",
+              "RelativeToolTip": "Knowledge\\Entities\\Chemicals\\Chemical_CompoundProperty.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T04:54:35.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IdGenerator.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Core\\IdGenerator.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Core\\IdGenerator.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Core\\IdGenerator.cs",
+              "RelativeToolTip": "Knowledge\\Core\\IdGenerator.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAowB8AAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-08T07:38:48.211Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ChemicalRepository.cs",
+              "DocumentMoniker": "D:\\Knowledge\\Knowledge\\Business\\Chemical\\ChemicalRepository.cs",
+              "RelativeDocumentMoniker": "Knowledge\\Business\\Chemical\\ChemicalRepository.cs",
+              "ToolTip": "D:\\Knowledge\\Knowledge\\Business\\Chemical\\ChemicalRepository.cs",
+              "RelativeToolTip": "Knowledge\\Business\\Chemical\\ChemicalRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-28T08:36:19.43Z"
+              "WhenOpened": "2024-03-08T06:23:18.908Z",
+              "EditorCaption": ""
             }
           ]
         }
