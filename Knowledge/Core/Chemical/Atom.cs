@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Knowledge.Core.Chemical;
+﻿namespace Knowledge.Core.Chemical;
 
 public enum Atom
 {
@@ -64,6 +58,21 @@ public enum Atom
     Xe = 54,
     Cs = 55,
     Ba = 56,
+    La = 57,
+    Ce = 58,
+    Pr = 59,
+    Nd = 60,
+    Pm = 61,
+    Sm = 62,
+    Eu = 63,
+    Gd = 64,
+    Tb = 65,
+    Dt = 66,
+    Ho = 67,
+    Er = 68,
+    Tm = 69,
+    Yb = 70,
+    Lu = 71,
     Hf = 72,
     Ta = 73,
     W = 74,
@@ -80,7 +89,22 @@ public enum Atom
     At = 85,
     Rn = 86,
     Fr = 87,
-    Ra = 8,
+    Ra = 88,
+    Ac = 89,
+    Th = 90,
+    Pa = 91,
+    U = 92,
+    Np = 93,
+    Pu = 94,
+    Am = 95,
+    Cm = 96,
+    Bk = 97,
+    Cf = 98,
+    Es = 99,
+    Fm = 100,
+    Md = 101,
+    No = 102,
+    Lr = 103,
     Rf = 104,
     Db = 105,
     Sg = 106,
@@ -96,39 +120,4 @@ public enum Atom
     Lv = 116,
     Ts = 117,
     Og = 118,
-    La = 57,
-    Ce = 58,
-    Pr = 59,
-    Nd = 60,
-    Pm = 61,
-    Sm = 62,
-    Eu = 63,
-    Gd = 64,
-    Tb = 65,
-    Dt = 66,
-    Ho = 67,
-    Er = 68,
-    Tm = 69,
-    Yb = 70,
-    Lu = 71,
-    Ac = 89,
-    Th = 90,
-    Pa = 91,
-    U = 92,
-    Np = 93,
-    Pu = 94,
-    Am = 95,
-    Cm = 96,
-    Bk = 97,
-    Cf = 98,
-    Es = 99,
-    Fm = 100,
-    Md = 101,
-    No = 102,
-    Lr = 103
-
-
-
-
-
 }

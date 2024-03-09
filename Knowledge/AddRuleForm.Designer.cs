@@ -28,138 +28,151 @@
         /// </summary>
         private void InitializeComponent()
         {
-            mainPanel = new Panel();
-            DetailRulePanel = new Panel();
-            bottomPanel = new Panel();
-            btnCancel = new Button();
-            btnOK = new Button();
-            dgvRuleDetails = new DataGridView();
-            Compound = new DataGridViewComboBoxColumn();
-            MoleWeight = new DataGridViewTextBoxColumn();
-            InfoPanel = new Panel();
-            txtRuleInfo = new TextBox();
-            mainPanel.SuspendLayout();
-            DetailRulePanel.SuspendLayout();
-            bottomPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvRuleDetails).BeginInit();
-            InfoPanel.SuspendLayout();
-            SuspendLayout();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.DetailRulePanel = new System.Windows.Forms.Panel();
+            this.bottomPanel = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.dgvRuleDetails = new System.Windows.Forms.DataGridView();
+            this.Compound = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Type = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.MoleWeight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InfoPanel = new System.Windows.Forms.Panel();
+            this.txtRuleInfo = new System.Windows.Forms.TextBox();
+            this.mainPanel.SuspendLayout();
+            this.DetailRulePanel.SuspendLayout();
+            this.bottomPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRuleDetails)).BeginInit();
+            this.InfoPanel.SuspendLayout();
+            this.SuspendLayout();
             // 
             // mainPanel
             // 
-            mainPanel.BorderStyle = BorderStyle.FixedSingle;
-            mainPanel.Controls.Add(DetailRulePanel);
-            mainPanel.Controls.Add(InfoPanel);
-            mainPanel.Dock = DockStyle.Fill;
-            mainPanel.Location = new Point(0, 0);
-            mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(528, 476);
-            mainPanel.TabIndex = 0;
+            this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainPanel.Controls.Add(this.DetailRulePanel);
+            this.mainPanel.Controls.Add(this.InfoPanel);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(528, 476);
+            this.mainPanel.TabIndex = 0;
             // 
             // DetailRulePanel
             // 
-            DetailRulePanel.Controls.Add(bottomPanel);
-            DetailRulePanel.Controls.Add(dgvRuleDetails);
-            DetailRulePanel.Dock = DockStyle.Fill;
-            DetailRulePanel.Location = new Point(0, 80);
-            DetailRulePanel.Margin = new Padding(3, 15, 3, 3);
-            DetailRulePanel.Name = "DetailRulePanel";
-            DetailRulePanel.Size = new Size(526, 394);
-            DetailRulePanel.TabIndex = 1;
+            this.DetailRulePanel.Controls.Add(this.bottomPanel);
+            this.DetailRulePanel.Controls.Add(this.dgvRuleDetails);
+            this.DetailRulePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DetailRulePanel.Location = new System.Drawing.Point(0, 80);
+            this.DetailRulePanel.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.DetailRulePanel.Name = "DetailRulePanel";
+            this.DetailRulePanel.Size = new System.Drawing.Size(526, 394);
+            this.DetailRulePanel.TabIndex = 1;
             // 
             // bottomPanel
             // 
-            bottomPanel.Controls.Add(btnCancel);
-            bottomPanel.Controls.Add(btnOK);
-            bottomPanel.Dock = DockStyle.Bottom;
-            bottomPanel.Location = new Point(0, 346);
-            bottomPanel.Name = "bottomPanel";
-            bottomPanel.Size = new Size(526, 48);
-            bottomPanel.TabIndex = 2;
+            this.bottomPanel.Controls.Add(this.btnCancel);
+            this.bottomPanel.Controls.Add(this.btnOK);
+            this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottomPanel.Location = new System.Drawing.Point(0, 346);
+            this.bottomPanel.Name = "bottomPanel";
+            this.bottomPanel.Size = new System.Drawing.Size(526, 48);
+            this.bottomPanel.TabIndex = 2;
             // 
             // btnCancel
             // 
-            btnCancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnCancel.Location = new Point(440, 14);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 1;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnCancel_Click;
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Location = new System.Drawing.Point(440, 14);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 1;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnOK
             // 
-            btnOK.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnOK.Location = new Point(365, 14);
-            btnOK.Name = "btnOK";
-            btnOK.Size = new Size(64, 23);
-            btnOK.TabIndex = 2;
-            btnOK.Text = "OK";
-            btnOK.UseVisualStyleBackColor = true;
-            btnOK.Click += btnOK_Click;
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOK.Location = new System.Drawing.Point(365, 14);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(64, 23);
+            this.btnOK.TabIndex = 2;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
             // 
             // dgvRuleDetails
             // 
-            dgvRuleDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvRuleDetails.Columns.AddRange(new DataGridViewColumn[] { Compound, MoleWeight });
-            dgvRuleDetails.Dock = DockStyle.Fill;
-            dgvRuleDetails.Location = new Point(0, 0);
-            dgvRuleDetails.Name = "dgvRuleDetails";
-            dgvRuleDetails.RowTemplate.Height = 25;
-            dgvRuleDetails.Size = new Size(526, 394);
-            dgvRuleDetails.TabIndex = 0;
-            dgvRuleDetails.CellValidating += dgvRuleDetails_CellValidating;
+            this.dgvRuleDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRuleDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Compound,
+            this.Type,
+            this.MoleWeight});
+            this.dgvRuleDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvRuleDetails.Location = new System.Drawing.Point(0, 0);
+            this.dgvRuleDetails.Name = "dgvRuleDetails";
+            this.dgvRuleDetails.RowTemplate.Height = 25;
+            this.dgvRuleDetails.Size = new System.Drawing.Size(526, 394);
+            this.dgvRuleDetails.TabIndex = 0;
+            this.dgvRuleDetails.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvRuleDetails_CellValidating);
+            this.dgvRuleDetails.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRuleDetails_CellValueChanged);
             // 
             // Compound
             // 
-            Compound.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Compound.HeaderText = "Compound";
-            Compound.Name = "Compound";
+            this.Compound.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Compound.HeaderText = "Compound";
+            this.Compound.Name = "Compound";
+            // 
+            // Type
+            // 
+            this.Type.HeaderText = "Type";
+            this.Type.Name = "Type";
             // 
             // MoleWeight
             // 
-            MoleWeight.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            MoleWeight.HeaderText = "MoleWeight";
-            MoleWeight.Name = "MoleWeight";
-            MoleWeight.Width = 97;
+            this.MoleWeight.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.MoleWeight.HeaderText = "MoleWeight";
+            this.MoleWeight.Name = "MoleWeight";
+            this.MoleWeight.Width = 97;
             // 
             // InfoPanel
             // 
-            InfoPanel.Controls.Add(txtRuleInfo);
-            InfoPanel.Dock = DockStyle.Top;
-            InfoPanel.Location = new Point(0, 0);
-            InfoPanel.Name = "InfoPanel";
-            InfoPanel.Size = new Size(526, 80);
-            InfoPanel.TabIndex = 0;
+            this.InfoPanel.Controls.Add(this.txtRuleInfo);
+            this.InfoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InfoPanel.Location = new System.Drawing.Point(0, 0);
+            this.InfoPanel.Name = "InfoPanel";
+            this.InfoPanel.Size = new System.Drawing.Size(526, 80);
+            this.InfoPanel.TabIndex = 0;
             // 
             // txtRuleInfo
             // 
-            txtRuleInfo.BackColor = SystemColors.Window;
-            txtRuleInfo.Dock = DockStyle.Fill;
-            txtRuleInfo.Location = new Point(0, 0);
-            txtRuleInfo.Multiline = true;
-            txtRuleInfo.Name = "txtRuleInfo";
-            txtRuleInfo.ReadOnly = true;
-            txtRuleInfo.Size = new Size(526, 80);
-            txtRuleInfo.TabIndex = 0;
+            this.txtRuleInfo.BackColor = System.Drawing.SystemColors.Window;
+            this.txtRuleInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.txtRuleInfo.Location = new System.Drawing.Point(0, 0);
+            this.txtRuleInfo.Multiline = true;
+            this.txtRuleInfo.Name = "txtRuleInfo";
+            this.txtRuleInfo.ReadOnly = true;
+            this.txtRuleInfo.Size = new System.Drawing.Size(526, 80);
+            this.txtRuleInfo.TabIndex = 0;
             // 
             // AddRuleForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(528, 476);
-            Controls.Add(mainPanel);
-            MinimumSize = new Size(544, 515);
-            Name = "AddRuleForm";
-            Text = "AddRuleForm";
-            mainPanel.ResumeLayout(false);
-            DetailRulePanel.ResumeLayout(false);
-            bottomPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvRuleDetails).EndInit();
-            InfoPanel.ResumeLayout(false);
-            InfoPanel.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(528, 476);
+            this.Controls.Add(this.mainPanel);
+            this.MinimumSize = new System.Drawing.Size(544, 515);
+            this.Name = "AddRuleForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AddRuleForm";
+            this.Load += new System.EventHandler(this.AddRuleForm_Load);
+            this.mainPanel.ResumeLayout(false);
+            this.DetailRulePanel.ResumeLayout(false);
+            this.bottomPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRuleDetails)).EndInit();
+            this.InfoPanel.ResumeLayout(false);
+            this.InfoPanel.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -169,10 +182,11 @@
         private TextBox txtRuleInfo;
         private Panel DetailRulePanel;
         private DataGridView dgvRuleDetails;
-        private DataGridViewComboBoxColumn Compound;
-        private DataGridViewTextBoxColumn MoleWeight;
         private Panel bottomPanel;
         private Button btnCancel;
         private Button btnOK;
+        private DataGridViewComboBoxColumn Compound;
+        private DataGridViewComboBoxColumn Type;
+        private DataGridViewTextBoxColumn MoleWeight;
     }
 }

@@ -36,7 +36,7 @@ public class JsonFileChemicalRepository : IChemicalRepository
         File.WriteAllText(fullPath, json);
     }
 
-    public Task<long> CreateNewCompound(string? name, Dictionary<Atom, int> formulaDetails, Dictionary<string, string>? properties = null)
+    public Task<long> CreateNewCompound(Dictionary<Atom, int> formulaDetails, Dictionary<string, string>? properties = null)
     {
         var existCompounds = ReadFile<Chemical_Compound>(COMPOUND_FILE);
 
@@ -47,6 +47,13 @@ public class JsonFileChemicalRepository : IChemicalRepository
             Atom = x.Key,
             AtomWeight = x.Value,
         }).ToList();
+
+        var name = Helpers.BuildCompoundName(details);
+        var existCompound = existCompounds.FirstOrDefault(x => x.Name == name);
+        if (existCompound != null)
+        {
+            return Task.FromResult(existCompound.Id);
+        }
 
         var compoundProperties = properties?.Select(x => new Chemical_CompoundProperty { Name = x.Key, Value = x.Value }).ToList();
 
@@ -66,41 +73,30 @@ public class JsonFileChemicalRepository : IChemicalRepository
         return Task.FromResult(newId);
     }
 
-    public Task<long> CreateNewRule(Dictionary<long, int> reactants, Dictionary<long, int> conclusions)
+    public Task<long> CreateNewRule(IList<Chemical_RuleItem> items)
     {
         var existRules = ReadFile<Chemical_Rule>(RULE_FILE);
         var existCompounds = ReadFile<Chemical_Compound>(COMPOUND_FILE);
 
         var newId = IdGenerator.NewId();
 
-        var items = new List<Chemical_RuleItem>();
-
-        foreach (var reactant in reactants)
+        foreach (var item in items)
         {
-            items.Add(new Chemical_RuleItem
-            {
-                CompoundId = reactant.Key,
-                RuleId = newId,
-                RuleType = RuleType.Reactant,
-                MoleWeight = reactant.Value,
-            });
+            item.RuleId = newId;
         }
 
-        foreach (var conclusion in conclusions)
+        var name = Helpers.BuildRuleName(items, existCompounds);
+
+        var existRule = existRules.FirstOrDefault(x => x.Name == name);
+        if (existRule != null)
         {
-            items.Add(new Chemical_RuleItem
-            {
-                CompoundId = conclusion.Key,
-                RuleId = newId,
-                RuleType = RuleType.Conclusion,
-                MoleWeight = conclusion.Value,
-            });
+            return Task.FromResult(existRule.Id);
         }
 
         var newRule = new Chemical_Rule
         {
             Id = newId,
-            Display = BuildRuleDisplay(reactants, conclusions, existCompounds),
+            Name = name,
             Items = items,
             IsDeleted = false,
         };
@@ -112,29 +108,7 @@ public class JsonFileChemicalRepository : IChemicalRepository
         return Task.FromResult(newId);
     }
 
-    private string BuildRuleDisplay(Dictionary<long, int> reactants, Dictionary<long, int> conclusions, IList<Chemical_Compound> compounds)
-    {
-        var leftEles = reactants.Select(x => FormatRuleEle(x.Key, x.Value, compounds));
-        var rightEles = conclusions.Select(x => FormatRuleEle(x.Key, x.Value, compounds));
 
-        return $"{string.Join(" + ", leftEles)} -> {string.Join(" + ", rightEles)}";
-    }
-
-    private string FormatRuleEle(long compoundId, int moles, IList<Chemical_Compound> compounds)
-    {
-        var compound = compounds.FirstOrDefault(x => x.Id == compoundId)
-            ?? throw new Exception($"Not exist compound {compoundId}");
-
-        var compoundName = compound.Name ?? BuildCompoundName(compound.FormulaDetails);
-
-        return $"{(moles != 1 ? moles : "")}{compoundName}";
-    }
-
-    private string BuildCompoundName(IList<Chemical_FormulaDetail> formulaDetails)
-    {
-        var elements = formulaDetails.Select(x => $"{x.Atom}{(x.AtomWeight != 1 ? x.AtomWeight : "")}");
-        return string.Join("", elements);
-    }
 
     public Task<Chemical_Compound?> FindCompound(long compoundId)
     {

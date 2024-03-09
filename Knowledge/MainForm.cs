@@ -1,4 +1,6 @@
 ﻿using Accessibility;
+using Knowledge.Core.Chemical;
+using Knowledge.Entities.Chemicals;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,48 +15,18 @@ namespace Knowledge
 {
     public partial class MainForm : Form
     {
-        private List<Point> objectPositions = new List<Point>();
+        private readonly IChemicalRepositoryFactory chemicalRepositoryFactory;
 
-        private List<System.Drawing.Rectangle> rectangles = new List<System.Drawing.Rectangle>();
+        private IList<Chemical_Compound> _compounds = new List<Chemical_Compound>();
 
-        public MainForm()
+        private IList<Chemical_Rule> _rules = new List<Chemical_Rule>();
+
+        public MainForm(IChemicalRepositoryFactory chemicalRepositoryFactory)
         {
+            this.chemicalRepositoryFactory = chemicalRepositoryFactory;
             InitializeComponent();
-            InitializeObjects();
+            LoadData();
         }
-
-        private void InitializeObjects()
-        {
-            // Thêm các vị trí của đối tượng vào danh sách
-            objectPositions.Add(new Point(100, 100));
-            objectPositions.Add(new Point(200, 150));
-            objectPositions.Add(new Point(150, 250));
-
-            rectangles.Add(new Rectangle(100, 120, 10, 10));
-        }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
-            Graphics g = MainPanel.CreateGraphics();
-
-            // Vẽ các đối tượng
-            foreach (Point point in objectPositions)
-            {
-                g.FillEllipse(Brushes.Blue, point.X - 20, point.Y - 20, 40, 40);
-            }
-
-            // Vẽ các liên kết giữa các đối tượng
-            if (objectPositions.Count >= 2)
-            {
-                Pen pen = new Pen(Color.Black, 2);
-                for (int i = 0; i < objectPositions.Count - 1; i++)
-                {
-                    g.DrawLine(pen, objectPositions[i], objectPositions[i + 1]);
-                }
-            }
-        }
-
 
         private void btnAddCompound_Click(object sender, EventArgs e)
         {
@@ -62,18 +34,76 @@ namespace Knowledge
             var dialogResult = addCompoundForm.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
-                
+                var repository = chemicalRepositoryFactory.CreateChemicalRepository("jsonFile");
+                var formularDetails = addCompoundForm.BuildFormularDetails();
+
+                var taks = repository.CreateNewCompound(formularDetails.ToDictionary(x => x.Atom, x => x.AtomWeight));
+                var newId = taks.Result;
+
+                var newCompoundTask = repository.GetAvailableCompounds();
+                this._compounds.Clear();
+                foreach (var compound in newCompoundTask.Result)
+                {
+                    this._compounds.Add(compound);
+                }
+                this.dgvCompounds.DataSource = null;
+                this.dgvCompounds.DataSource = this._compounds;
             }
         }
 
         private void btnAddRule_Click(object sender, EventArgs e)
         {
-            var addRuleForm = new AddRuleForm();
+            var addRuleForm = new AddRuleForm(this.chemicalRepositoryFactory);
             var dialogResult = addRuleForm.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
+                var repository = chemicalRepositoryFactory.CreateChemicalRepository("jsonFile");
+                var items = addRuleForm.BuildRuleItems();
 
+                var taks = repository.CreateNewRule(items);
+                var newId = taks.Result;
+
+                var newCompoundTask = repository.GetAvailableRules();
+                this._rules = newCompoundTask.Result;
+                this.dgvRules.DataSource = null;
+                this.dgvRules.DataSource = this._rules;
             }
+        }
+
+        private void LoadData()
+        {
+            // Load compounds, rules
+            var repository = chemicalRepositoryFactory.CreateChemicalRepository("jsonFile");
+            var compoundTask = repository.GetAvailableCompounds();
+            this._compounds = compoundTask.Result;
+            this.dgvCompounds.DataSource = this._compounds;
+
+            var ruleTask = repository.GetAvailableRules();
+            this._rules = ruleTask.Result;
+            this.dgvRules.DataSource = this._rules;
+        }
+
+        private void btnExcute_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // Load grid Compound combobox
+            var compoundInitColumn = (DataGridViewComboBoxColumn)this.dgvInits.Columns["InitCompound"];
+            compoundInitColumn.DataSource = this._compounds;
+            compoundInitColumn.ValueMember = nameof(Chemical_Compound.Id);
+            compoundInitColumn.DisplayMember = nameof(Chemical_Compound.Name);
+
+            var compoundTargetColumn = (DataGridViewComboBoxColumn)this.dgvTargets.Columns["TargetCompound"];
+            compoundTargetColumn.DataSource = this._compounds;
+            compoundTargetColumn.ValueMember = nameof(Chemical_Compound.Id);
+            compoundTargetColumn.DisplayMember = nameof(Chemical_Compound.Name);
+
+            //
+            this.dgvCompounds.AutoGenerateColumns = false;
+            this.dgvRules.AutoGenerateColumns = false;
         }
     }
 }

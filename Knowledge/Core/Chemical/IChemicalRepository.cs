@@ -11,7 +11,7 @@ public interface IChemicalRepository
     /// <param name="formularDetails">chemical formula of compound</param>
     /// <param name="properties">Properties of compounds such as: color, odor, etc.</param>
     /// <returns>Id of compound</returns>
-    Task<long> CreateNewCompound(string? name, Dictionary<Atom, int> formularDetails, Dictionary<string, string>? properties = null);
+    Task<long> CreateNewCompound(Dictionary<Atom, int> formularDetails, Dictionary<string, string>? properties = null);
 
     /// <summary>
     /// Create new chemical rule
@@ -19,7 +19,7 @@ public interface IChemicalRepository
     /// <param name="reactants">list compound on the left of rule with key: id of compound, value: number of mole weight</param>
     /// <param name="conclusions">list compound on the right of rule with key: id of compound, value: number of mole weight</param>
     /// <returns>id of rule</returns>
-    Task<long> CreateNewRule(Dictionary<long, int> reactants, Dictionary<long, int> conclusions);
+    Task<long> CreateNewRule(IList<Chemical_RuleItem> items);
 
     /// <summary>
     /// Find a compound by id

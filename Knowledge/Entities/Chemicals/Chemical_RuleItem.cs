@@ -9,8 +9,6 @@ public class Chemical_RuleItem
 
     public long CompoundId { get; set; }
 
-    public Chemical_Compound? Compound { get; set; }
-
     public RuleType RuleType { get; set; }
 
     public int MoleWeight { get; set; }

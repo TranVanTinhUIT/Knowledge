@@ -7,7 +7,7 @@ public class Chemical_Compound
 {
     public long Id { get; set; }
 
-    public string? Name { get; set; }
+    public string Name { get; set; } = default!;
 
     public IList<Chemical_FormulaDetail> FormulaDetails { get; set; } = default!;
 

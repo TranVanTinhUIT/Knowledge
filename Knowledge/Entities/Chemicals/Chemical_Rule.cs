@@ -12,7 +12,7 @@ public class Chemical_Rule
 {
     public long Id { get; set; }
 
-    public string Display { get; set; } = default!;
+    public string Name { get; set; } = default!;
 
     public IList<Chemical_RuleItem> Items { get; set; } = default!;
 

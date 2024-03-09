@@ -28,138 +28,147 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtCompoundInfo = new TextBox();
-            mainPanel = new Panel();
-            DetailRulePanel = new Panel();
-            bottomPanel = new Panel();
-            btnOK = new Button();
-            dgvCompoundDetails = new DataGridView();
-            Atom = new DataGridViewComboBoxColumn();
-            Weight = new DataGridViewTextBoxColumn();
-            InfoPanel = new Panel();
-            btnCancel = new Button();
-            mainPanel.SuspendLayout();
-            DetailRulePanel.SuspendLayout();
-            bottomPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dgvCompoundDetails).BeginInit();
-            InfoPanel.SuspendLayout();
-            SuspendLayout();
+            this.txtCompoundInfo = new System.Windows.Forms.TextBox();
+            this.mainPanel = new System.Windows.Forms.Panel();
+            this.DetailRulePanel = new System.Windows.Forms.Panel();
+            this.bottomPanel = new System.Windows.Forms.Panel();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.dgvCompoundDetails = new System.Windows.Forms.DataGridView();
+            this.Atom = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Weight = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.InfoPanel = new System.Windows.Forms.Panel();
+            this.mainPanel.SuspendLayout();
+            this.DetailRulePanel.SuspendLayout();
+            this.bottomPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompoundDetails)).BeginInit();
+            this.InfoPanel.SuspendLayout();
+            this.SuspendLayout();
             // 
             // txtCompoundInfo
             // 
-            txtCompoundInfo.BackColor = SystemColors.Window;
-            txtCompoundInfo.Dock = DockStyle.Top;
-            txtCompoundInfo.Location = new Point(0, 0);
-            txtCompoundInfo.Multiline = true;
-            txtCompoundInfo.Name = "txtCompoundInfo";
-            txtCompoundInfo.ReadOnly = true;
-            txtCompoundInfo.Size = new Size(526, 80);
-            txtCompoundInfo.TabIndex = 0;
+            this.txtCompoundInfo.BackColor = System.Drawing.SystemColors.Menu;
+            this.txtCompoundInfo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.txtCompoundInfo.Enabled = false;
+            this.txtCompoundInfo.Location = new System.Drawing.Point(0, 0);
+            this.txtCompoundInfo.Multiline = true;
+            this.txtCompoundInfo.Name = "txtCompoundInfo";
+            this.txtCompoundInfo.ReadOnly = true;
+            this.txtCompoundInfo.Size = new System.Drawing.Size(526, 80);
+            this.txtCompoundInfo.TabIndex = 100;
             // 
             // mainPanel
             // 
-            mainPanel.BorderStyle = BorderStyle.FixedSingle;
-            mainPanel.Controls.Add(DetailRulePanel);
-            mainPanel.Controls.Add(InfoPanel);
-            mainPanel.Dock = DockStyle.Fill;
-            mainPanel.Location = new Point(0, 0);
-            mainPanel.Name = "mainPanel";
-            mainPanel.Size = new Size(528, 476);
-            mainPanel.TabIndex = 1;
+            this.mainPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mainPanel.Controls.Add(this.DetailRulePanel);
+            this.mainPanel.Controls.Add(this.InfoPanel);
+            this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.mainPanel.Location = new System.Drawing.Point(0, 0);
+            this.mainPanel.Name = "mainPanel";
+            this.mainPanel.Size = new System.Drawing.Size(528, 476);
+            this.mainPanel.TabIndex = 1;
             // 
             // DetailRulePanel
             // 
-            DetailRulePanel.Controls.Add(bottomPanel);
-            DetailRulePanel.Controls.Add(dgvCompoundDetails);
-            DetailRulePanel.Dock = DockStyle.Fill;
-            DetailRulePanel.Location = new Point(0, 80);
-            DetailRulePanel.Margin = new Padding(3, 15, 3, 3);
-            DetailRulePanel.Name = "DetailRulePanel";
-            DetailRulePanel.Size = new Size(526, 394);
-            DetailRulePanel.TabIndex = 1;
+            this.DetailRulePanel.Controls.Add(this.bottomPanel);
+            this.DetailRulePanel.Controls.Add(this.dgvCompoundDetails);
+            this.DetailRulePanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.DetailRulePanel.Location = new System.Drawing.Point(0, 80);
+            this.DetailRulePanel.Margin = new System.Windows.Forms.Padding(3, 15, 3, 3);
+            this.DetailRulePanel.Name = "DetailRulePanel";
+            this.DetailRulePanel.Size = new System.Drawing.Size(526, 394);
+            this.DetailRulePanel.TabIndex = 1;
             // 
             // bottomPanel
             // 
-            bottomPanel.Controls.Add(btnCancel);
-            bottomPanel.Controls.Add(btnOK);
-            bottomPanel.Dock = DockStyle.Bottom;
-            bottomPanel.Location = new Point(0, 346);
-            bottomPanel.Name = "bottomPanel";
-            bottomPanel.Size = new Size(526, 48);
-            bottomPanel.TabIndex = 1;
-            // 
-            // btnOK
-            // 
-            btnOK.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnOK.Location = new Point(365, 14);
-            btnOK.Name = "btnOK";
-            btnOK.Size = new Size(64, 23);
-            btnOK.TabIndex = 0;
-            btnOK.Text = "OK";
-            btnOK.UseVisualStyleBackColor = true;
-            btnOK.Click += btnOK_Click;
-            // 
-            // dgvCompoundDetails
-            // 
-            dgvCompoundDetails.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvCompoundDetails.Columns.AddRange(new DataGridViewColumn[] { Atom, Weight });
-            dgvCompoundDetails.Dock = DockStyle.Fill;
-            dgvCompoundDetails.Location = new Point(0, 0);
-            dgvCompoundDetails.Name = "dgvCompoundDetails";
-            dgvCompoundDetails.RowTemplate.Height = 25;
-            dgvCompoundDetails.Size = new Size(526, 394);
-            dgvCompoundDetails.TabIndex = 0;
-            dgvCompoundDetails.CellValidating += dgvCompoundDetails_CellValidating;
-            // 
-            // Atom
-            // 
-            Atom.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            Atom.HeaderText = "Atom";
-            Atom.Name = "Atom";
-            // 
-            // Weight
-            // 
-            Weight.AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            Weight.HeaderText = "Weight";
-            Weight.Name = "Weight";
-            Weight.Width = 70;
-            // 
-            // InfoPanel
-            // 
-            InfoPanel.Controls.Add(txtCompoundInfo);
-            InfoPanel.Dock = DockStyle.Top;
-            InfoPanel.Location = new Point(0, 0);
-            InfoPanel.Name = "InfoPanel";
-            InfoPanel.Size = new Size(526, 80);
-            InfoPanel.TabIndex = 0;
+            this.bottomPanel.Controls.Add(this.btnCancel);
+            this.bottomPanel.Controls.Add(this.btnOK);
+            this.bottomPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.bottomPanel.Location = new System.Drawing.Point(0, 346);
+            this.bottomPanel.Name = "bottomPanel";
+            this.bottomPanel.Size = new System.Drawing.Size(526, 48);
+            this.bottomPanel.TabIndex = 1;
             // 
             // btnCancel
             // 
-            btnCancel.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            btnCancel.Location = new Point(440, 14);
-            btnCancel.Name = "btnCancel";
-            btnCancel.Size = new Size(75, 23);
-            btnCancel.TabIndex = 0;
-            btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
-            btnCancel.Click += btnCancel_Click;
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.Location = new System.Drawing.Point(440, 14);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 0;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnOK
+            // 
+            this.btnOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOK.Location = new System.Drawing.Point(365, 14);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(64, 23);
+            this.btnOK.TabIndex = 0;
+            this.btnOK.Text = "OK";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.btnOK_Click);
+            // 
+            // dgvCompoundDetails
+            // 
+            this.dgvCompoundDetails.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCompoundDetails.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Atom,
+            this.Weight});
+            this.dgvCompoundDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvCompoundDetails.Location = new System.Drawing.Point(0, 0);
+            this.dgvCompoundDetails.Name = "dgvCompoundDetails";
+            this.dgvCompoundDetails.RowTemplate.Height = 25;
+            this.dgvCompoundDetails.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvCompoundDetails.Size = new System.Drawing.Size(526, 394);
+            this.dgvCompoundDetails.TabIndex = 1;
+            this.dgvCompoundDetails.CellValidating += new System.Windows.Forms.DataGridViewCellValidatingEventHandler(this.dgvCompoundDetails_CellValidating);
+            this.dgvCompoundDetails.CellValueChanged += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCompoundDetails_CellValueChanged);
+            // 
+            // Atom
+            // 
+            this.Atom.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Atom.HeaderText = "Atom";
+            this.Atom.Name = "Atom";
+            this.Atom.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Weight
+            // 
+            this.Weight.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Weight.HeaderText = "Weight";
+            this.Weight.Name = "Weight";
+            this.Weight.Width = 70;
+            // 
+            // InfoPanel
+            // 
+            this.InfoPanel.Controls.Add(this.txtCompoundInfo);
+            this.InfoPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.InfoPanel.Location = new System.Drawing.Point(0, 0);
+            this.InfoPanel.Name = "InfoPanel";
+            this.InfoPanel.Size = new System.Drawing.Size(526, 80);
+            this.InfoPanel.TabIndex = 0;
             // 
             // AddCompoundForm
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(528, 476);
-            Controls.Add(mainPanel);
-            MinimumSize = new Size(544, 515);
-            Name = "AddCompoundForm";
-            Text = "AddCompoundForm";
-            mainPanel.ResumeLayout(false);
-            DetailRulePanel.ResumeLayout(false);
-            bottomPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dgvCompoundDetails).EndInit();
-            InfoPanel.ResumeLayout(false);
-            InfoPanel.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(528, 476);
+            this.Controls.Add(this.mainPanel);
+            this.MinimumSize = new System.Drawing.Size(544, 515);
+            this.Name = "AddCompoundForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AddCompoundForm";
+            this.Load += new System.EventHandler(this.AddCompoundForm_Load);
+            this.mainPanel.ResumeLayout(false);
+            this.DetailRulePanel.ResumeLayout(false);
+            this.bottomPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCompoundDetails)).EndInit();
+            this.InfoPanel.ResumeLayout(false);
+            this.InfoPanel.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -169,10 +178,10 @@
         private Panel DetailRulePanel;
         private DataGridView dgvCompoundDetails;
         private Panel InfoPanel;
-        private DataGridViewComboBoxColumn Atom;
-        private DataGridViewTextBoxColumn Weight;
         private Panel bottomPanel;
         private Button btnOK;
         private Button btnCancel;
+        private DataGridViewComboBoxColumn Atom;
+        private DataGridViewTextBoxColumn Weight;
     }
 }
