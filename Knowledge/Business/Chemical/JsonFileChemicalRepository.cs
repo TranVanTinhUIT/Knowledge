@@ -70,6 +70,8 @@ public class JsonFileChemicalRepository : IChemicalRepository
 
         SaveFile(COMPOUND_FILE, existCompounds);
 
+        Console.WriteLine("Create compound " + newCompound.Name);
+
         return Task.FromResult(newId);
     }
 
@@ -104,6 +106,8 @@ public class JsonFileChemicalRepository : IChemicalRepository
         existRules.Add(newRule);
 
         SaveFile(RULE_FILE, existRules);
+
+        Console.WriteLine("Create rule " + newRule.Name);
 
         return Task.FromResult(newId);
     }
