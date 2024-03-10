@@ -17,4 +17,9 @@ public class Chemical_Rule
     public IList<Chemical_RuleItem> Items { get; set; } = default!;
 
     public bool IsDeleted { get; set; }
+
+    public override string ToString()
+    {
+        return this.Name;
+    }
 }

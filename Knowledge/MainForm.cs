@@ -1,4 +1,5 @@
 ﻿using Accessibility;
+using Knowledge.Business.Chemical;
 using Knowledge.Core.Chemical;
 using Knowledge.Entities.Chemicals;
 using System;
@@ -15,7 +16,7 @@ namespace Knowledge
 {
     public partial class MainForm : Form
     {
-        private readonly IChemicalRepositoryFactory chemicalRepositoryFactory;
+        private readonly IChemicalRepositoryFactory _factory;
 
         private IList<Chemical_Compound> _compounds = new List<Chemical_Compound>();
 
@@ -23,7 +24,7 @@ namespace Knowledge
 
         public MainForm(IChemicalRepositoryFactory chemicalRepositoryFactory)
         {
-            this.chemicalRepositoryFactory = chemicalRepositoryFactory;
+            this._factory = chemicalRepositoryFactory;
             InitializeComponent();
             LoadData();
         }
@@ -34,7 +35,7 @@ namespace Knowledge
             var dialogResult = addCompoundForm.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
-                var repository = chemicalRepositoryFactory.CreateChemicalRepository("jsonFile");
+                var repository = _factory.CreateChemicalRepository("jsonFile");
                 var formularDetails = addCompoundForm.BuildFormularDetails();
 
                 var taks = repository.CreateNewCompound(formularDetails.ToDictionary(x => x.Atom, x => x.AtomWeight));
@@ -53,11 +54,11 @@ namespace Knowledge
 
         private void btnAddRule_Click(object sender, EventArgs e)
         {
-            var addRuleForm = new AddRuleForm(this.chemicalRepositoryFactory);
+            var addRuleForm = new AddRuleForm(this._factory);
             var dialogResult = addRuleForm.ShowDialog();
             if (dialogResult == DialogResult.OK)
             {
-                var repository = chemicalRepositoryFactory.CreateChemicalRepository("jsonFile");
+                var repository = _factory.CreateChemicalRepository("jsonFile");
                 var items = addRuleForm.BuildRuleItems();
 
                 var taks = repository.CreateNewRule(items);
@@ -73,7 +74,7 @@ namespace Knowledge
         private void LoadData()
         {
             // Load compounds, rules
-            var repository = chemicalRepositoryFactory.CreateChemicalRepository("jsonFile");
+            var repository = _factory.CreateChemicalRepository("jsonFile");
             var compoundTask = repository.GetAvailableCompounds();
             this._compounds = compoundTask.Result;
             this.dgvCompounds.DataSource = this._compounds;
@@ -85,7 +86,63 @@ namespace Knowledge
 
         private void btnExcute_Click(object sender, EventArgs e)
         {
+            var ruleBasedSystem = new RuleBasedSystem(this._factory);
+            var initCompoundIds = GetInitCompoundIds();
+            var targetCompoundIds = GetTargetCompoundIds();
 
+            var resultRulesTask = ruleBasedSystem.ForwardChaining(initCompoundIds, targetCompoundIds);
+
+            var rules = resultRulesTask.Result;
+
+            var initCompoundNames = initCompoundIds.Select(initCompoundId => this._compounds.First(compound => compound.Id == initCompoundId).Name);
+            var targetCompoundNames = targetCompoundIds.Select(targetCompoundId => this._compounds.First(compound => compound.Id == targetCompoundId).Name);
+
+            if (rules == null)
+            {
+                this.txtResponse.Text = $"Không thể tìm thấy chuỗi phản ứng điều chế {string.Join(", ", targetCompoundNames)} từ {string.Join(", ", initCompoundNames)}";
+            }
+            else
+            {
+                var str = $"Chuỗi phản ứng điều chế {string.Join(", ", targetCompoundNames)} từ {string.Join(", ", initCompoundNames)} là:";
+                for (int i = 0; i < rules.Count; i++)
+                {
+                    str += $"\r\n  {(i + 1)}. {rules[i].Name}";
+                }
+
+                this.txtResponse.Text = str;
+            }
+        }
+
+        private IList<long> GetInitCompoundIds()
+        {
+            var result = new List<long>();
+            foreach (DataGridViewRow row in this.dgvInits.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.OwningColumn.Name == "InitCompound" && !string.IsNullOrEmpty(cell.Value?.ToString()))
+                    {
+                        result.Add(long.Parse(cell.Value.ToString()!));
+                    }
+                }
+            }
+            return result;
+        }
+
+        private IList<long> GetTargetCompoundIds()
+        {
+            var result = new List<long>();
+            foreach (DataGridViewRow row in this.dgvTargets.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.OwningColumn.Name == "TargetCompound" && !string.IsNullOrEmpty(cell.Value?.ToString()))
+                    {
+                        result.Add(long.Parse(cell.Value.ToString()!));
+                    }
+                }
+            }
+            return result;
         }
 
         private void MainForm_Load(object sender, EventArgs e)
